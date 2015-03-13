@@ -9,3 +9,15 @@ group: home
 ![logo](/img/mucoderlogo300.png)
 
 ## audio tools & plugins
+
+~~~
+   for(i=0; i<10; i++)
+   {
+      break;
+   }
+   
+   <foo>
+      <bar/>
+   </foo>
+   
+~~~
