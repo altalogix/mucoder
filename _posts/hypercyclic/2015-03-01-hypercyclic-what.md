@@ -31,7 +31,7 @@ group: hypercyclic
 - if you like it, and want to help, share it with your friends
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=lolivers" async="async"></script>
-<div class="indent-below-li" style="padding-bottom:2rem">
+<div class="indent-below-li" style="padding-bottom:2rem" >
   <div class="addthis_sharing_toolbox"></div>
 </div>
 
@@ -45,3 +45,4 @@ group: hypercyclic
 		<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
    	    </form>
 </div>
+
