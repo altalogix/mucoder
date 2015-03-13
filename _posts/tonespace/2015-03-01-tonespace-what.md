@@ -31,12 +31,14 @@ group: tonespace
 
 - tonespace is free (as in beer)
 - if you like it, and want to help, share it with your friends
+
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=lolivers" async="async"></script>
 <div class="indent-below-li" style="padding-bottom:2rem" >
   <div class="addthis_sharing_toolbox"></div>
 </div>
 
 - if you *really* like it, feel free to make a donation
+
 <div class="indent-below-li">
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 		<input type="hidden" name="cmd" value="_s-xclick">
