@@ -45,6 +45,10 @@ defaults:
       type: "posts"
     values:
       style: "left"
+
+sass:
+  style: compressed
+
+# gems:
+  #- jekyll-sitemap
   
-#gems:
-#  - jekyll-redirect-from

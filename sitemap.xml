@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/en/legal/privacypolicy/</loc>
+  </url>
+  <url>
+    <loc>/en/hypercyclic/</loc>
+  </url>
+  <url>
+    <loc>/en/tonespace/</loc>
+  </url>
+  <url>
+    <loc>/en/hypercyclic/v0105/manual/</loc>
+  </url>
+  <url>
+    <loc>/en/tonespace/v0205/manual/</loc>
+  </url>
+</urlset>
