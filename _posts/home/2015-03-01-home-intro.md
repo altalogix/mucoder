@@ -10,14 +10,3 @@ group: home
 
 ## audio tools & plugins
 
-~~~
-   for(i=0; i<10; i++)
-   {
-      break;
-   }
-   
-   <foo>
-      <bar/>
-   </foo>
-   
-~~~
