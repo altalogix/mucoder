@@ -12,7 +12,7 @@
 	
 	The sole purpose of this license is for another party to be able to reuse the 
 	structure, layout and theme elements of this site, the goal being to create a 
-	similarly looking, but different website with completely different content.
+	similarly organized, but different website with completely different content.
 	
 	
 	The MIT License (MIT)
@@ -40,7 +40,7 @@
 
 
     Please note: The above work was based on the SinglePaged Jekyll site theme license 
-	as published at ttps://github.com/t413/SinglePaged.
+	as published at https://github.com/t413/SinglePaged.
 	What follows below is the original copyright and permission notice for 
 	this ancestor work:
 
