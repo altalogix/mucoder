@@ -34,7 +34,7 @@ group: tonespace
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=lolivers" async="async"></script>
 
-<div class="indent-below-li" style="padding-bottom:2rem" markdown="0">
+<div class="indent-below-li" style="padding-bottom:2rem" >
   <div class="addthis_sharing_toolbox"></div>
 </div>
 
