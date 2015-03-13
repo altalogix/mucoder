@@ -39,7 +39,6 @@
 <body>
 
 {% if disableCookies == "false" %}
-<script src="/js/cookiechoices.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function(event) {
     cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
@@ -107,7 +106,8 @@
   {% include html/analytics.html %}
 {% endif %}  
 
-</body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/cookiechoices.js"></script>
 <script src="/js/site.js"></script>
+</body>
 </html>
