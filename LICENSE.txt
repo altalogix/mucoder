@@ -1,8 +1,23 @@
-Original SinglePaged Jekyll site theme license:
+ 
+    Please Note: 
+	
+	The term "the Software" used below, shall be defined as: "the structure, layout 
+	and theme elements of the website hosted at www.mucoder.net, such as .css files, 
+	Liquid templates and javascript files.".
 
+	It shall not be defined as including any altalogix/mucoder software products that 
+	are downloadable from that website, such as tonespace and hypercyclic, nor shall 
+	it be defined to include any specific content published on that website, such as
+	organization or product descriptions, organization or product logos/artwork, etc.
+	
+	The sole purpose of this license is for another party to be able to reuse the 
+	structure, layout and theme elements of this site, the goal being to create a 
+	similarly looking, but different website with completely different content.
+	
+	
 	The MIT License (MIT)
 
-	Copyright (c) 2014 Tim O'Brien (t413)
+	Copyright (c) 2015 Leo Olivers (Altalogix BVBA)
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
@@ -24,25 +39,14 @@ Original SinglePaged Jekyll site theme license:
 
 
 
-Extended site theme for www.mucoder.net license:
-  
-    Please Note: 
-	
-	The term "the Software" used below, shall be defined as: "the structure, layout 
-	and theme elements of the website hosted at www.mucoder.net, such as .css files, 
-	Liquid templates and javascript files.".
-	It shall not be defined as including any altalogix/mucoder software products that 
-	are downloadable from that website, such as tonespace and hypercyclic, nor shall 
-	it be defined to include any specific content published on that website.
-	
-	The sole purpose of this license is for another party to be able to reuse the 
-	structure, layout and theme elements of this site, the goal being to create a 
-	similarly looking, but different website with completely different content.
-	
-	
+    Please note: The above work was based on the SinglePaged Jekyll site theme license 
+	as published at ttps://github.com/t413/SinglePaged.
+	What follows below is the original copyright and permission notice for 
+	this ancestor work:
+
 	The MIT License (MIT)
 
-	Copyright (c) 2015 Leo Olivers (Altalogix BVBA)
+	Copyright (c) 2014 Tim O'Brien (t413)
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
