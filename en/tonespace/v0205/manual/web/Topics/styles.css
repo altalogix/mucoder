@@ -1,0 +1,112 @@
+﻿body {
+  font-family: 'Times New Roman';
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: Black;
+  background-color: White;
+  text-transform: none;
+}
+p {
+  padding-top: 0pt;
+  padding-right: 0pt;
+  padding-bottom: 0pt;
+  padding-left: 0pt;
+  text-indent: 0pt;
+  text-align: left;
+  line-height: normal;
+  margin: 0px;
+}
+.ts0 {
+  font-family: Tahoma;
+  font-size: 14pt;
+  font-weight: bold;
+  color: White;
+}
+.ts1 {
+  font-family: Verdana;
+  font-size: 10pt;
+}
+.ts2 {
+  font-family: Verdana;
+  font-weight: bold;
+}
+.ts3 {
+  font-family: Arial;
+  font-size: 24pt;
+}
+.ts4 {
+  font-family: Verdana;
+  font-size: 8pt;
+  color: Gray;
+}
+.ts5 {
+  font-family: Verdana;
+  font-size: 10pt;
+  font-style: italic;
+}
+.ts6 {
+  font-family: Verdana;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.ts7 {
+  font-family: Verdana;
+  font-size: 8pt;
+}
+.ts8 {
+  font-family: Verdana;
+  font-size: 10pt;
+  background-color: #e8e8ff;
+}
+.ts9 {
+  font-family: 'Courier New';
+  font-size: 10pt;
+}
+.ts10 {
+  font-family: Verdana;
+  font-size: 10pt;
+  background-color: #c4d0f4;
+}
+.ts11 {
+  font-family: Verdana;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.ts12 {
+  font-family: Verdana;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color: #e8e8ff;
+}
+.ts13 {
+  font-family: Verdana;
+  font-size: 28pt;
+  font-weight: bold;
+}
+.ts14 {
+  font-family: Verdana;
+  font-size: 24pt;
+}
+.hs0 {
+  font-family: Verdana;
+  font-size: 10pt;
+  text-decoration: underline;
+  color: Blue;
+}
+.ps0 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.ps1 {
+  padding-left: 1.27cm;
+  text-indent: -0.64cm;
+}
+.ps2 {
+  text-align: center;
+}
+.ps3 {
+  padding-left: 2.59291666666667cm;
+  text-indent: -0.64cm;
+}

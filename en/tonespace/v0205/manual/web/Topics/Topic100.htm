@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- saved from url=(0025)http://www.helpsmith.com/ -->
+<head>
+<title>Understanding keys</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="HelpSmith 4.0 (Build 13.213)" />
+<style type="text/css" media="screen">
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#non-scrolling-area {
+  padding: 0px 20px 0 10px;
+  background-color: #5e5f5f;
+}
+#container {
+  overflow: auto;
+}
+#content {
+  padding: 0 20px 5px 10px;
+}
+</style>
+<link type="text/css" href="../css/topics/style.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/nsa.js"></script>
+<script type="text/javascript" src="../js/settings.js?h=3b63d0d2"></script>
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/topic.js"></script>
+<script type="text/javascript">
+	syncToc(100, 'Index.htm');
+</script>
+</head>
+<body>
+<div id="non-scrolling-area">
+  <p class="ps0"><span class="ts0">Understanding keys</span></p>
+</div>
+<div id="container">
+  <div id="content-background">
+    <div id="content">
+      <p>&nbsp;</p>
+      <p class="ps1">So musicians that play together have to agree first on the scale to use (if they want to avoid playing notes that don&rsquo;t go well together). But this is not enough. They also have to agree on the key they will use. The key (in tonespace at least) is just a fancy word for the starting note or better, the starting pitch class of the scale <a href="Topic200.htm" class="hs0">[4]</a>.&nbsp; A key of C means we start at the first pitch class (being zero). A key of C# means we start at the second pitch class (being 1). A key of D means the third pitch class (being 2). And so forth.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">You can control the key using the <span class="ts6">key</span>&nbsp;parameter in tonespace.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps6">&nbsp;<img width="239" height="26" border="0" src="Images/Image(11).png" /></p>
+      <p class="ps6">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Note: when you hear someone saying : &ldquo;let&rsquo;s play in the key of C Major&rdquo;, actually this says two things at once:</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>the scale to use, i.e. the intervals between valid notes (Major)</p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>the starting pitch class (C or offset 0)</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">This means that, starting from C (offset 0), you will use only notes that you find at the relative offsets [0 2 4 5 7 9 11].&nbsp; For the key of C that starting pitch class would be 0, therefore, for the middle octave which starts at midi 60, we get to keep midi 60+0+0, 60+0+2, 60+0+4, 60+0+5, 60+0+7, 60+0+9 and 70+0+11.&nbsp; This is shown in the space fragment below:</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps3"><img width="543" height="78" border="0" src="Images/Image(12).png" /></p>
+      <p class="ps6">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Should you instead agree on D Major, then the intervals would remain the same (major), but the starting pitch class would be different (offset 2), leading to the following midi notes in the scale/key :&nbsp; 60+2+0, 60+2+2, 60+2+4, 60+2+5, 60+2+7, 60+2+9 and 60+2+11. The result looks like this:</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps3"><img width="540" height="74" border="0" src="Images/Image(29).png" /></p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Notice how you get the same pattern of allowed notes starting from either C in the first picture and starting from D in the second picture. It is just shifted upward by 2 semitones.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Should you agree instead on C Minor, then the starting note remains the same as C Major (offset 0), but now the intervals that you add to that starting note will be different (minor) : [0 2 3 5 7 8 10], yielding midi notes 60+0+0, 60+0+2, 60+0+3, 60+0+5, 60+0+7, 60+0+8 and 60+0+10. Which looks like this:</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps3"><img width="542" height="79" border="0" src="Images/Image(14).png" /></p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">So keep in mind that the resulting note selection is always a function of these two things : the scale (the intervals) and the starting note to which the intervals are added. You are encouraged to play a bit with the <span class="ts6">scale </span>and <span class="ts6">key</span>&nbsp;parameters in tonespace to get a feel of how scales and keys interact to select a bunch of notes.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Notice also how the underlying space never changes.&nbsp; Applying a scale and key is in fact just putting a filter onto the space, making certain cells black and adjusting the note labels in each cell.&nbsp; It does however not alter the location of the midi notes within the space.&nbsp; Midi notes are an absolute pitch notation whereas scales, keys and note names are relative to the point of view of the musician <a href="Topic200.htm" class="hs0">[5]</a>.</p>
+      <p class="ps1">&nbsp;</p>
+      <p>&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <div>
+        <div class="hline0"></div>
+      </div>
+      <p class="ps4"><span class="ts3">&copy; 201</span><span class="ts3">3</span><span class="ts3">&nbsp;altalogix bvba. All rights reserved. </span></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

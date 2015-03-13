@@ -1,0 +1,50 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [.gitignore]
+permalink: / ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+
+### content configuration ###
+title:       "mucoder audio tools &amp; plugins"
+keywords:    "mucoder vst au tonespace hypercyclic plugin"
+description: "mucoder audio tools &amp; plugins"
+source_link: "https://github.com/altalogix/mucoder/tree/gh-pages"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/mucodericon128.png"
+google_analytics_key:  ## put YOUR key here to enable tracking! (blank to disable)
+
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+  grey:      '#EAEAEA'
+  contactgreen:    '#63BD2F'
+  tonespaceyellow: '#FED700'
+  hypercyclicblue: '#6ACDFE'
+  
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      style: "left"
+  
+#gems:
+#  - jekyll-redirect-from

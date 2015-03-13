@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- saved from url=(0025)http://www.helpsmith.com/ -->
+<head>
+<title>Automatic chord fitting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="HelpSmith 4.0 (Build 13.213)" />
+<style type="text/css" media="screen">
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#non-scrolling-area {
+  padding: 0px 20px 0 10px;
+  background-color: #5e5f5f;
+}
+#container {
+  overflow: auto;
+}
+#content {
+  padding: 0 20px 5px 10px;
+}
+</style>
+<link type="text/css" href="../css/topics/style.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/nsa.js"></script>
+<script type="text/javascript" src="../js/settings.js?h=3b63d0d2"></script>
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/topic.js"></script>
+<script type="text/javascript">
+	syncToc(140, 'Index.htm');
+</script>
+</head>
+<body>
+<div id="non-scrolling-area">
+  <p class="ps0"><span class="ts0">Automatic chord fitting</span></p>
+</div>
+<div id="container">
+  <div id="content-background">
+    <div id="content">
+      <p>&nbsp;</p>
+      <p class="ps1">Up to now we discussed mostly manual selection and auditioning of chords. However, tonespace can also help to automatically select appropriate chords. This process we call <span class="ts4">chord fitting</span>. Two chord fitting algorithms are available.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1"><span class="ts5">Fitting chords to a scale/key</span></p>
+      <p class="ps1"><span class="ts5">&nbsp;</span></p>
+      <p class="ps1">As explained earlier in <a href="Topic220.htm" class="hs0">Quick Start Scenario 4</a>, a new feature of tonespace is that it can automatically select the best chord (most common chord) that fits at a certain root note in the scale. You point the cell with the chord root note that you wish and tonespace will try to fit a chord at that root note that is in key with the currently selected scale/key.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">For this you need to set the <span class="ts6">assist</span>&nbsp;parameter to <span class="ts6">Fit chord to scale (best)</span>.&nbsp; Variants of this parameter let you also cycle through all candidate chords by clicking repeatedly on the same root note cell (<span class="ts6">Fit chord to scale (cycle)</span>), which is great for auditioning all chords that fit.&nbsp; Or let you select a random chord from the possible candidates (<span class="ts6">Fit chord to scale (rand)</span>), which is useful for generating repetitive chord sequences that are less predictable.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Please note that at all times the range of chords that tonespace can use can be controlled using the <span class="ts6">ch filter</span>&nbsp;parameter. This allows you for instance to only generate triads or only sevenths or anything up to triads or sevenths.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1"><span class="ts5">Geometric chord fitting</span></p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Tonespace can also perform automatic chord fitting using a geometric algorithm.&nbsp; In this mode tonespace will try to find chords that fit optimally wherever you point in the space. Here chords are selected based on their shape within the space. The chord with the most compact shape &quot;wins&quot; and will be played.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">For automatic geometric chord fitting to generate interesting chords, you&rsquo;d better select another space than the educational space <span class="ts6">Octaves [1:12]</span>&nbsp;that we have been using so far. For instance let&rsquo;s take <span class="ts6">Balzano [4:3]</span>&nbsp;instead <a href="Topic200.htm" class="hs0">[6]</a>. Also keep <span class="ts6">scale</span>&nbsp;set to <span class="ts6">Major (Ionian)</span>&nbsp;and <span class="ts6">key</span>&nbsp;to <span class="ts6">C</span>. </p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">One more essential setting here is to set <span class="ts6">assist</span>&nbsp;to <span class="ts6">Fit </span><span class="ts6">most </span><span class="ts6">compact </span><span class="ts6">s</span><span class="ts6">hape</span>&nbsp;and also to set the <span class="ts6">ch filter</span>&nbsp;parameter to <span class="ts6">Sevenths</span>.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps3"><img width="247" height="22" border="0" src="Images/assistcompact.png" /></p>
+      <p class="ps6">&nbsp;</p>
+      <p class="ps3"><img width="248" height="21" border="0" src="Images/chfiltuptoseventsh.png" /></p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">Note how the <span class="ts6">chord</span>&nbsp;parameter combobox has been disabled in that case. This is to indicate that the <span class="ts6">chord</span>&nbsp;parameter now is driven by tonespace instead of by the user. The chord will be automatically selected from all chords allowed by the chord filter. In this case we limit chords to sevenths or four-note chords.&nbsp; You can see which chord is played/selected by the <span class="ts6">last</span>/<span class="ts6">next</span>&nbsp;chord display indicators.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps6">&nbsp;</p>
+      <p class="ps1">Now go to the space and play (left-click) the following series of cells: midi note 64, 65, 62, 50 and 53.&nbsp; You will hear a progression of 5 seventh chords chosen by tonespace, with the root notes being the cells that you left-clicked.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps3"><img width="255" height="189" border="0" src="Images/Image(26).png" /></p>
+      <p class="ps6">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">By setting the chord filter to other chord types, you can have tonespace play triads or dyads instead of sevenths.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">One more thing. If you try the example above with sevenths and you click the same cell repeatedly, you will see that the chords will not be the same everytime.&nbsp; This is because at some spots there would be multiple chords that would fit the space equally well (that is, they are equally compact).&nbsp; Tonespace then alternates between these equally appriopriate chords.&nbsp;This can give a very pleasant effect if you use a pulsing note-on/note-off scheme to trigger cells (like the built-in MIDI track <span class="ts6">Pulses...</span>&nbsp;does).&nbsp; If you are interested, read more about how this algorithm works in the next section.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <div>
+        <div class="hline0"></div>
+      </div>
+      <p class="ps4"><span class="ts3">&copy; 201</span><span class="ts3">3</span><span class="ts3">&nbsp;altalogix bvba. All rights reserved. </span></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

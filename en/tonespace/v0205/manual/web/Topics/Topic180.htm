@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- saved from url=(0025)http://www.helpsmith.com/ -->
+<head>
+<title>MIDI input</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="HelpSmith 4.0 (Build 13.213)" />
+<style type="text/css" media="screen">
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#non-scrolling-area {
+  padding: 0px 20px 0 10px;
+  background-color: #5e5f5f;
+}
+#container {
+  overflow: auto;
+}
+#content {
+  padding: 0 20px 5px 10px;
+}
+</style>
+<link type="text/css" href="../css/topics/style.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/nsa.js"></script>
+<script type="text/javascript" src="../js/settings.js?h=3b63d0d2"></script>
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/topic.js"></script>
+<script type="text/javascript">
+	syncToc(180, 'Index.htm');
+</script>
+</head>
+<body>
+<div id="non-scrolling-area">
+  <p class="ps0"><span class="ts0">MIDI input</span></p>
+</div>
+<div id="container">
+  <div id="content-background">
+    <div id="content">
+      <p>&nbsp;</p>
+      <p class="ps1">There is one more tonespace aspect we haven&rsquo;t dealt with yet : MIDI input. So far we have been mostly using the mouse to play chords. However, it is also possible to use an external keyboard, or for that matter, any external source of MIDI data that you can connect to the tonespace MIDI input.&nbsp; A MIDI track in your host application would be another example of this. </p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">When you feed MIDI data to tonespace a number of things can happen, depending on the setting of the <span class="ts6">trigger</span>&nbsp;parameter:</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>If <span class="ts6">trigger</span>&nbsp;is set to <span class="ts6">Mouse click triggers cell</span>, the MIDI input merely forwarded either to the tonespace MIDI out port or to the built-in synth (depending on the <span class="ts6">midi out</span>&nbsp;parameter setting).&nbsp; Apart from that it will also highlight the cells corresponding to the incoming MIDI notes.&nbsp; These highlights will be green, in order to distinguish them from the interactively played cells, which will be highlighted in orange.&nbsp; If a space contains more than one cell with the same MIDI note number, all of those will be highlighted. This mode can be used to visualize incoming midi on the tonespace grid.&nbsp; Also, if you want to control tonespace completely using mouse clicks, this is the mode to choose.<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>If <span class="ts6">trigger</span>&nbsp;is set to <span class="ts6">Midi triggers clicked cell</span>, then if the <span class="ts6">on click</span>&nbsp; parameter is set to <span class="ts6">Trigger cell</span>, tonespace will use the incoming MIDI notes to trigger a chord in the cell where you are currently left-clicking and holding down the mouse button.&nbsp; If the <span class="ts6">on click</span>&nbsp; parameter is set to <span class="ts6">Trigger </span><span class="ts6">&amp; hold </span><span class="ts6">cell</span>&nbsp;then you do not have to keep the mouse button down, and the last-clicked cell remains active until you click a new cell.&nbsp; <br />What is really useful about this mode is that you can get the rhythm and dynamics (velocity) from an external keyboard or even a MIDI track, while still navigating interactively using the mouse for selecting the pitches to be played (ie select the cells you want with their root chord notes). This is a good setting to try out with the built-in <span class="ts6">Pulses...</span>&nbsp;midi track. Please note that the incoming midi should be preferably monophonic in this mode.<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>If <span class="ts6">trigger</span>&nbsp;is set to <span class="ts6">Midi triggers hovered cell</span>, this is very similar to the previous mode, but here it merely suffices to hover the mouse pointer over a cell to have the incoming midi notes trigger that cell.<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>If <span class="ts6">trigger</span>&nbsp;is set to <span class="ts6">Midi triggers note</span>&nbsp;then the incoming midi controls both the rhythm and the pitches. This means that tonespace will look up an enabled cell in the current space that has the same note number as the incoming midi note and it will trigger that cell. This means that mouse input will have no longer any effect in the tonespace grid, and you should now do all the playing using an external midi keyboard or midi track.&nbsp; The only effect the mouse still has in this mode is that, when there are multiple cells in the space that have the same midi note number, tonespace will select the cell closest to your mouse cursor.<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span>If <span class="ts6">trigger</span>&nbsp;is set to <span class="ts6">Midi triggers </span><span class="ts6">note (mod.)</span>&nbsp;then the behavior is almost identical to the previous setting, with one difference: the incoming midi note will be assumed to be played in the CMajor scale (so white keys on the piano keyboard) and will first be modulated/transposed to the selected scale/key in tonespace before it will trigger any chords.&nbsp; This allows you to play the white keys on a keyboard and still generate chords that are in key with another scale/key.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">When using midi input, please make sure that also the <span class="ts6">midi in</span>&nbsp;parameter is set to the right source and channel. Typically <span class="ts6">midi in</span>&nbsp;is set to:<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span><span class="ts6">Midi track</span>&nbsp;if you want to use one of the built-in midi tracks as the source (eg the Pulses... track)<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span><span class="ts6">VST/AU host</span>&nbsp;if you want to input midi coming from your host application/DAW<br /><span class="ts8">&nbsp;</span></p>
+      <p class="ps2"><img src="Images/Image(4).png" /><span style="display: inline-block; width: 18px"></span><span class="ts6">&lt;your device name&gt;</span>&nbsp;if you want midi input to come from a hardware midi device such as an external keyboard.&nbsp; <br />Note: before devices can be selected you need to enable them using the <span class="ts6">Configure...</span>&nbsp;option on the midi in parameter drop down menu.</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <p class="ps1">&nbsp;</p>
+      <div>
+        <div class="hline0"></div>
+      </div>
+      <p class="ps4"><span class="ts3">&copy; 201</span><span class="ts3">3</span><span class="ts3">&nbsp;altalogix bvba. All rights reserved. </span></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

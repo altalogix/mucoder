@@ -1,0 +1,253 @@
+#popup-box {
+  background-color: White;
+  border-color: #4b535e;
+  border-color: rgba(75,83,94,0.45);
+}
+#popup-box .content {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 13px;
+}
+#popup-box .message {
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#popup-box .content a {
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#popup-box .content a:hover {
+  color: #212121;
+  background-color: #dadada;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#popup-box .close-icon {
+  background-image: url('closeicon.png?h=3b63d0d2');
+}
+#popup-box .topicdoc-icon {
+  background: url('docicon.png?h=3b63d0d2') no-repeat center center;
+}
+#sorting-popup-menu {
+  background-color: White;
+  background-color: rgba(255,255,255,0.94);
+  border-color: #4b535e;
+  border-color: rgba(75,83,94,0.45);
+}
+#sorting-popup-menu li.menu-item {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  border-bottom-color: #e2e2e2;
+}
+#sorting-popup-menu li.menu-item.menu-item-hover {
+  color: #212121;
+  background-color: #dadada;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#sorting-popup-menu li.menu-item.menu-item-checked span:after {
+  background: url('checkmark.png?h=3b63d0d2') no-repeat 0 0;
+}
+#sorting-popup-menu li.menu-item.menu-item-checked.menu-item-hover span:after {
+  background: url('checkmark.png?h=3b63d0d2') no-repeat 0 -8px;
+}
+#sort-control span.caret {
+  background: url('caret.png?h=3b63d0d2') no-repeat 0 0;
+}
+#toc-tree ul.dynatree-container a {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 10pt;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#toc-tree ul.dynatree-container a:hover {
+  color: Black;
+  background-color: #f2f7fd;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#toc-tree ul.dynatree-container a:focus, #toc-tree span.dynatree-focused a:link {
+  color: Black;
+  background-color: #efebde;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#toc-tree span.dynatree-active a, #toc-tree span.dynatree-active a:hover {
+  color: White !important;
+  background-color: #3169c6 !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+#index-tree ul.dynatree-container a {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 10pt;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#index-tree ul.dynatree-container a:hover {
+  color: Black;
+  background-color: #f2f7fd;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#index-tree ul.dynatree-container a:focus, #index-tree span.dynatree-focused a:link {
+  color: Black;
+  background-color: #efebde;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#index-tree span.dynatree-active a, #index-tree span.dynatree-active a:hover {
+  color: White !important;
+  background-color: #3169c6 !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+#index-tree span.highlight a {
+  color: Black;
+  background-color: #eee;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-form {
+  border-bottom-color: #d0d0d0;
+}
+#search-result-tree ul.dynatree-container a {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 10pt;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-result-tree ul.dynatree-container a:hover {
+  color: Black;
+  background-color: #f2f7fd;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-result-tree ul.dynatree-container a:focus, #search-result-tree span.dynatree-focused a:link {
+  color: Black;
+  background-color: #efebde;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-result-tree span.dynatree-active a, #search-result-tree span.dynatree-active a:hover {
+  color: White !important;
+  background-color: #3169c6 !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+#search-result-tree span.visited-topic a {
+  color: Gray;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: normal;
+}
+#tabs .ui-tabs-panel {
+  background: none 0 0 White;
+}
+.text-label {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-result span.se-message {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: normal;
+}
+#tabs.ui-tabs .ui-tabs-nav {
+  padding: 8px 0 0 4px;
+}
+#tabs .ui-widget-header {
+  background: url('tabs-header.png?h=3b63d0d2') repeat-x center center #dedede;
+  border-bottom-color: #aaa;
+}
+.ui-tabs .ui-tabs-nav li {
+  margin: 0 2px 0 0;
+}
+#tabs.ui-tabs .ui-tabs-nav li a {
+  padding: 6px 4px;
+}
+#tabs .ui-widget-header .ui-state-default {
+  background: url('tab-regular.png?h=3b63d0d2') repeat-x center center #e6e6e6;
+  border-color: #b3b3b3;
+}
+#tabs .ui-widget-header .ui-state-hover {
+  background: url('tab-active.png?h=3b63d0d2') repeat-x center center #dadada;
+  border-color: #999;
+}
+#tabs .ui-widget-header .ui-state-active {
+  background: url('tab-selected.png?h=3b63d0d2') repeat-x center center White;
+  border-color: #aaa;
+}
+#tabs .ui-tabs-nav {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 11px;
+}
+#tabs .ui-widget-header .ui-state-default a {
+  color: #555;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#tabs .ui-widget-header .ui-state-hover a {
+  color: #212121;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#tabs .ui-widget-header .ui-state-active a {
+  color: #212121;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+#search-form #squery, #tab-index #kwd-search {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  border-color: #ccc;
+}
