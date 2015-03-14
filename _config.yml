@@ -37,6 +37,8 @@ colors:
   contactgreen:    '#63BD2F'
   tonespaceyellow: '#FED700'
   hypercyclicblue: '#6ACDFE'
+  kvrblue:         '#3093C7'
+  kvrdarkblue:     '#246D91'
   
 defaults:
   -

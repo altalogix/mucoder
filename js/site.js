@@ -105,3 +105,22 @@ $(document).ready(function (){
 
 });
 
+function installRssLoader(rssFeedUrl, rssDataElemId, titleStartPos) {
+	$('#' + rssDataElemId).ready(function () {
+		$.ajax({
+			url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=8&q=' + rssFeedUrl,
+			dataType: 'jsonp',
+			success: function (data) {
+				$(data.responseData.feed.entries).each(function (index, entry) {
+					var item_html = '<li><strong><a target="_blank" href="' + entry.link + '">' + entry.title.substring(titleStartPos) + '</a></strong>&nbsp;&nbsp;' + entry.contentSnippet + '</li>';
+					$('#' + rssDataElemId +' ul.rss-items').append(item_html);
+				});
+				$('#' + rssDataElemId +' div.rss-loading').fadeOut();
+				$('#' + rssDataElemId +' ul.rss-items').slideDown();
+			},
+			error: function () {}
+
+		});
+	});
+}
+

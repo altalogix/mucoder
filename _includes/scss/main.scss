@@ -374,6 +374,45 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
+/* ---- rss feeds ---- */ 
+
+
+.rssdata ul.rss-items {
+/*
+    display: none;
+    margin: 0;
+    padding: 0;
+*/
+}
+
+.rssdata ul.rss-items li {
+/*
+    display: block;
+    margin: 0;
+    padding: 0;
+	*/
+}
+
+.rssdata ul.rss-items a {
+/*
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 2px 6px;
+    background: #ccc;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+	*/
+}
+
+.rssdata ul.rss-items a:hover {
+/*
+    background: #666;
+    color: #fff;
+    text-decoration: none;
+	*/
+}
 
 /* ---- small device adaptations ---- */
 

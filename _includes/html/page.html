@@ -37,6 +37,19 @@
 	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
 </head>
 <body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/cookiechoices.js"></script>
+<script src="/js/site.js"></script>
+{% if disableCookies == "false" %}
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
+  });
+</script>
+ {% include html/analytics.html %}
+{% endif %}  
+
   <div id="main">
 
     <nav><ul>
@@ -92,18 +105,6 @@
       </div>
     </div>
   </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/cookiechoices.js"></script>
-<script src="/js/site.js"></script>
-{% if disableCookies == "false" %}
-<script>
-  document.addEventListener('DOMContentLoaded', function(event) {
-    cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
-  });
-</script>
- {% include html/analytics.html %}
-{% endif %}  
-
+  
 </body>
 </html>
