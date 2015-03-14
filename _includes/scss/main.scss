@@ -1,5 +1,5 @@
 
-$navborder                      : 0.3rem;
+$navborder          : 0.3rem;
 $navborder_active   : 0.6rem;
 $border_color       :  {{ site.colors.black }};
 
@@ -17,7 +17,11 @@ $border_color       :  {{ site.colors.black }};
   {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
   {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
   nav .p-{{id}} { border-color: {{ bg }}; }
-  #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; {% if node.bgimage %} background:url({{node.bgimage}}); {% endif %} }
+  #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; 
+     {% if node.bgimage %} background:url({{node.bgimage}}); {% endif %} 
+     {% if node.bgsize %} background-size: {{node.bgsize}}; {% endif %} 
+     {% if node.bgrepeat %} background-repeat: {{node.bgrepeat}}; {% endif %} 
+  }
   #{{id}} a { color: {{ fg }}; }
   #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}

@@ -58,7 +58,7 @@
 			<li ><a class="p-home-intro" href="/">home</a></li>	 
 	 {% endif %}	 
       {% for node in site.posts reversed %}
-	    {%if node.group == include.group %}
+	    {%if node.group == include.group and node.hideNavigation != true %}
 			{% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
 			<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
 		{% endif %}
