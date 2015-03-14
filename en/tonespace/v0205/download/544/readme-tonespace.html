@@ -1,0 +1,175 @@
+<html>
+<body style = "font-family: Verdana, Arial, Helvetica, sans-serif ">
+
+<h2>tonespace 2.5 - read me</h2><br/>
+
+<h3>Important - before you start</h3>
+
+<ul>
+
+<li><h4>Windows Users</h4></li>
+<ul>
+<li>When using Ableton Live, keyboard input in the plugin window is disabled by default. This is not controlled by the plugin, but is a default behaviour of Live itself.  You can enable keyboard input to the plugin window by adding the line  "-_EnsureKeyMessagesForPlugins" to a file called Options.txt in the directory c:\Users\&lt;user&gt;\AppData\Roaming\Ableton\Live n.n.n\Preferences\. Please see also <a href="https://www.ableton.com/en/articles/optionstxt-file-live">https://www.ableton.com/en/articles/optionstxt-file-live/</a></li>
+</ul>
+
+<li><h4>Mac Users</h4></li>
+<ul>
+<li>tonespace v2.5 now requires a Mac with Intel processor.</li>
+<li>the minimum OS X version required is 10.5, except for the Audio Unit plugin version, which requires 10.6</li>
+<li>if you want to use the AU version, you must copy the tonespace.component file to your components directory (e.g. to /Users/yourname/Library/Audio/Plug-ins/Components)</li>
+<li>if you want to use the VST version, you must copy and rename the tonespace.component file to tonespace.vst and copy it your vst directory  (e.g. to /Users/yourname/Library/Audio/Plug-ins/VST)</li>
+</ul>
+
+<li><h4>Linux users</h4></li>
+<ul>
+<li>tonespace v2.5 requires a 64-bit Linux distribution and when using the plugin version, a 64-bit VST host</li>
+<li>if you have a 32-bit Linux host, you can still use the tonespace 2.0 version</li>
+<li>tonespace was tested on Ubuntu Studio 12.04 Precise Pangolin LTS x64.  Other 64-bit distros might work, but your mileage may vary</li>
+<li>after unpacking tonespace from the downloaded zip, you must set the executable bit on the tonespace binary using the command 'chmod +x tonespace'</li>
+</ul>
+</ul>
+
+<br/>
+<h3>More information</h3>
+<ul>
+<li>for help please see the included pdf manual or visit the <a href="http://www.mucoder.net/en/tonespace/v0205/manual">online manual</a></li>
+<li>for license and third-party thank-you's: see included pdf manual or visit online <a href="http://www.mucoder.net/en/tonespace/v0205/license">license &amp; thank-you page</a></li>
+<li>for more information visit <a href="http://www.mucoder.net/tonespace">tonespace page</a></li>
+</ul>
+
+<br/>
+
+<h3>Your feedback is appreciated!</h3><br/>
+Please email any feedback to support@mucoder.net<br/>
+or PM mucoder @ kvraudio.com<br/><br/>
+
+When sending feedback please always state<br/>
+<ul>
+<li>tonespace version number that had the issue</li>
+<li>which hosts &amp; version are you using and whether it is a 32 or 64-bit host</li>
+<li>which OS and version are you running</li>
+</ul>
+
+<br/>
+
+<h3>Release notes</h3>
+
+<h3>Build 2.5.544 (release candidate)</h3>
+<ul>
+<li>fixed: always same chord selected whatever cell is clicked in Logic X 64-bit AU</li>
+</ul>
+<br/>
+
+<h3>Build 2.5.529 (beta)</h3>
+<ul>
+<li>fixed: tonespace plugin does not generate midi before the tonespace UI has been displayed at least once</li>
+<li>fixed: refined scale note spelling logic</li>
+<li>new: added lydian flat-7, persian and hindu scales</li>
+<li>new: upgraded x-platform layer to latest Juce version 3.0</li>
+</ul>
+<br/>
+
+<h3>Build 2.5.496 (beta)</h3>
+<ul>
+<li>fixed: Ableton Live 8 and 9 on Windows hangs or crashes when the plugin window has focus and user is pressing a PC keyboard key</li>
+<li>fixed: When renaming a preset, every typed character is duplicated three times in Ableton Live 8 and 9 on Windows</li>
+<li>fixed: menu option for showing online manual/license pages pointed to older versions</li>
+<li>fixed: tonespace vertical window size too large on OS/X</li>
+</ul>
+<br/>
+
+<h3>Build 2.5.493 (beta)</h3>
+<ul>
+<li>new: 64-bit support on all platforms (Windows/Mac/Linux)</li>
+<li>new: three additional scales: Major & Dorian, Major & Harmonic Minor, Major & Minor</li>
+<li>new: support for Jack on Linux</li>
+<li>new: VST and AU plugins merged into a single file on OS X</li>
+<li>fixed: Audio Unit validation failed in Logic 9</li>
+<li>removed: 32-bit support on Linux</li>
+<li>removed: PPC and OSX 10.4 support on Mac</li>
+<li>removed: OSX 10.5 support for AU on Mac</li>
+</ul>
+
+<br/>
+<h3>Build 2.0.361 (release)</h3>
+<ul>
+<li>fixed: updated manual with information on features added since public beta 2.0.294</li>
+<li>new: added pdf manual version</li>
+</ul>
+
+<br/>
+<h3>Build 2.0.354 (beta)</h3>
+<ul>
+<li>fixed: mode 'Midi triggers note (modulated)' transposed some notes an octave too low</li>
+<li>fixed: some slight factory preset tweaks</li>
+<li>new: added 'Monads' chord filter option, making it possible to use the chord fitting assist modes also with single notes</li>
+</ul>
+
+<br/>
+<h3>Build 2.0.353 (beta)</h3>
+<ul>
+<li>fixed: slow startup of the tonespace UI on OSX 10.6 Snow Leopard</li>
+<li>fixed: Logic revalidating tonespace AU component every time during start up</li>
+<li>fixed: 'none' chord displayed in balzano 3-shape</li>
+<li>fixed: note was not released when mouse up on disabled cell</li>
+<li>fixed: hold notes until next click did not work as users expected</li>
+<li>fixed: crash in Ableton Live on Windows when closing VST gui while tonespace help/about dialog still visible</li>
+<li>new: 'trigger' parameter replaces the 'on midi' parameter and controls when and how cells are triggered (either by mouse and/or by incoming midi notes)</li>
+<li>new: midi triggering offers several variants, including triggering on mouse clicking, mouse hovering or by incoming midi note as in tonespace 1.0</li>
+<li>new: triggering by midi notes can optionally transpose/modulate incoming midi notes from CMajor into the selected scale/key (allows to play 'white keys only' and still generate chords that are in key)</li>
+<li>new: 'on click' parameter replaces the 'mouse' parameter and controls whether chords are released on mouse-up or held until next click</li>
+<li>new: 'assist' parameter offers new chord assist modes, including a mode for fitting chords to a scale/key instead of to the space.</li>
+<li>new: with chord fitting to scale/key: when more than one chord is possible you can either take the best one, cycle through all, or pick a random one for an arpeggio-like effect</li>
+<li>new: 'chord filter' parameter allows to restrict the types of chords that are used by chord assist algorithms. Select between 2, 3 and 4 note-chords. This also reduces the number of chord assist parameter modes, as they longer have to select the chord size</li>
+<li>new: 'voicing' parameter has been extended with new inversion types and open/close modes. The old open/open+/open++ modes are now called spread/spread+/spread++</li>
+<li>new: the currently hovered and/or clicked root cell is now also higlighted, so you always know where you are in the grid, even when using chord voicings with a different root note</li>
+<li>new: last played and estimated next chord names are displayed</li>
+</ul>
+
+
+<br/>
+<h3>Build 2.0.294 (beta)</h3>
+<ul>
+<li>fixed: links to new product website now work</li>
+<li>fixed: clicking website link also inadvertently launched help/about dialog</li>
+</ul>
+<br/>
+<h3>Build 2.0.292 (beta)</h3>
+<ul>
+<li>fixed: added presets</li>
+<li>fixed: added help pages</li>
+<li>fixed: reset to defaults works as it should</li>
+</ul>
+<br/>
+<h3>Build 2.0.290 (beta)</h3>
+<ul>
+<li>fixed: linux window height slightly too big</li>
+<li>fixed: OSX about dialog height slightly too small</li>
+<li>fixed: selecting keys other than C seems to have no effect/space plays as if it always were in C</li>
+<li>known issue: no presets yet</li>
+<li>known issue: OSX tonespace icon same as hypercyclic's</li>
+</ul>
+<br/>
+<br/>
+<h3>Build 2.0.284 (beta)</h3>
+<ul>
+<li>fixed: VST on MacOSX crashes the host when opening help/about dialog (!)</li>
+<li>fixed: tweaked default space parameters</li>
+<li>known issue: no presets yet</li>
+<li>known issue: linux window height slightly too big</li>
+<li>known issue: OSX about dialog height slightly too small</li>
+<li>known issue: selecting keys other than C seems to have no effect/space plays as if it always were in C</li>
+</ul>
+<br/>
+<br/>
+<h3>Build 2.0.276 (beta)</h3>
+<ul>
+<li>known issue: VST on MacOSX crashes the host when opening help/about dialog (!)</li>
+<li>known issue: no presets yet</li>
+</ul>
+<br/>
+
+
+
+</body>
+</html>

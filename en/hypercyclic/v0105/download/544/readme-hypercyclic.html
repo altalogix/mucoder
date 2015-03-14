@@ -1,0 +1,99 @@
+<html>
+<body style = "font-family: Verdana, Arial, Helvetica, sans-serif ">
+
+<h2>hypercyclic 1.5 - read me</h2><br/>
+
+<h3>Important - before you start</h3>
+
+<ul>
+<li><h4>All Platforms</h4></li>
+
+<ul>
+<li>if you have been using beta build 1.5.493 and are upgrading to 1.5.496 or higher, you should reset hypercyclic to factory defaults once in order to restore the original factory presets</li>
+</ul>
+
+<li><h4>Windows Users</h4></li>
+<ul>
+<li>When using Ableton Live, keyboard input in the plugin window is disabled by default. This is not controlled by the plugin, but is a default behaviour of Live itself.  You can enable keyboard input to the plugin window by adding the line  "-_EnsureKeyMessagesForPlugins" to a file called Options.txt in the directory c:\Users\&lt;user&gt;\AppData\Roaming\Ableton\Live n.n.n\Preferences\. Please see also <a href="https://www.ableton.com/en/articles/optionstxt-file-live">https://www.ableton.com/en/articles/optionstxt-file-live/</a></li>
+</ul>
+
+<li><h4>Mac Users</h4></li>
+<ul>
+<li>hypercyclic v1.5 now requires a Mac with Intel processor.</li>
+<li>the minimum OS X version required is 10.5, except for the Audio Unit plugin version, which requires 10.6</li>
+<li>if you want to use the AU version, you must copy the hypercyclic.component file to your components directory (e.g. to /Users/yourname/Library/Audio/Plug-ins/Components)</li>
+<li>if you want to use the VST version, you must copy and rename the hypercyclic.component file to hypercyclic.vst and copy it your vst directory  (e.g. to /Users/yourname/Library/Audio/Plug-ins/VST)</li>
+</ul>
+<li><h4>Linux users</h4></li>
+<ul>
+<li>hypercyclic v1.5 requires a 64-bit Linux distribution and when using the plugin version, a 64-bit VST host</li>
+<li>if you have a 32-bit Linux host, you can still use the hypercyclic v1.1 version</li>
+<li>hypercyclic was tested on Ubuntu Studio 12.04 Precise Pangolin LTS x64.  Other 64-bit distros might work, but your mileage may vary</li>
+<li>after unpacking hypercyclic from the downloaded zip, you must set the executable bit on the hypercyclic binary using the command 'chmod +x hypercyclic'</li>
+</ul>
+</ul>
+
+<br/>
+<h3>More information</h3>
+<ul>
+<li>for help please see the included pdf manual or visit the <a href="http://www.mucoder.net/en/hypercyclic/v0105/manual">online manual</a></li>
+<li>for license and third-party thank-you's: see included pdf manual or visit online <a href="http://www.mucoder.net/en/hypercyclic/v0105/license">license &amp; thank-you page</a></li>
+<li>for more information visit <a href="http://www.mucoder.net/hypercyclic">hypercyclic page</a></li>
+</ul>
+
+<br/>
+
+<h3>Your feedback is appreciated!</h3><br/>
+Please email any feedback to support@mucoder.net<br/>
+or PM mucoder @ kvraudio.com<br/><br/>
+
+When sending feedback please always state<br/>
+<ul>
+<li>hypercyclic version number that had the issue</li>
+<li>which hosts &amp; version are you using and whether it is a 32 or 64-bit host</li>
+<li>which OS and version are you running</li>
+</ul>
+
+<br/>
+
+<h3>Release notes</h3>
+
+<h3>Build 1.5.544 (release candidate)</h3>
+<ul>
+<li>no changes</li>
+</ul>
+<br/>
+
+
+<h3>Build 1.5.529 (beta)</h3>
+<ul>
+<li>new: upgraded x-platform layer to latest Juce version 3.0</li>
+</ul>
+<br/>
+
+<h3>Build 1.5.496 (beta)</h3>
+<ul>
+<li>fixed: hypercyclic factory presets were not shown (all Untitled).  Note: you have to reset hypercyclic to factory defaults when upgrading from 1.5.493 to 496</li>
+<li>fixed: Ableton Live 8 and 9 on Windows hangs or crashes when the plugin window has focus and user is pressing a PC keyboard key</li>
+<li>fixed: When renaming a preset, every typed character is duplicated three times in Ableton Live 8 and 9 on Windowss</li>
+<li>fixed: menu option for showing online manual/license pages pointed to older versions</li>
+<li>fixed: hypercyclic About page did not fit entirely within the window</li>
+<li>fixed: hypercyclic vertical window size too large on OS/X</li>
+</ul>
+<br/>
+
+<h3>Build 1.5.493 (beta)</h3>
+<ul>
+<li>new: 64-bit support on all platforms (Windows/Mac/Linux)</li>
+<li>new: support for Jack on Linux</li>
+<li>new: VST and AU plugins merged into a single file on OS X</li>
+<li>fixed: Audio Unit validation failed in Logic 9</li>
+<li>removed: 32-bit support on Linux</li>
+<li>removed: PPC and OSX 10.4 support on Mac</li>
+<li>removed: OSX 10.5 support for AU on Mac</li>
+<ul>
+</ul>
+
+
+</body>
+</html>

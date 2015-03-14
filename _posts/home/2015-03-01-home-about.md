@@ -11,13 +11,13 @@ group: home
 #### me
 
 - I am an audio developer enthusiast, based in Leuven, Belgium.
-- when not working on audio stuff, I devote my time to a little but cool ISV startup, a modest IT consulting business and a family
+- when not working on audio stuff, I have a day job tending to a little but cool ISV startup, a modest IT consulting business and a family
 
 #### mission
 
 - mixing midi + plugins + crazy ideas
 - learning music theory, mostly by trying to explain it to a machine
-- share the output with fellow enthusiasts
+- share the <del>insane rubbish</del> awesome results with fellow enthusiasts
 
 #### other projects
 
