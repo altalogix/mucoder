@@ -44,6 +44,17 @@ Excellent tutorial on how how to use the tonespace AU plugin as a chord generato
 
 ---
 
+#### tutorial: using tonespace with Microkorg in Logic Studio
+
+##### by **jnberger**
+
+  
+This very useful tutorial demonstrates how to use tonespace to control your Microkorg from Logic. This allows you to turn single notes into chords. 
+
+  <div class="icontain"><iframe src="//www.youtube.com/embed/r7F5r0rUtr4" allowfullscreen></iframe></div>
+  
+---
+
 #### tutorial: connecting other instruments to tonespace in Ableton Live.
 
 ##### by **UncleAge**
