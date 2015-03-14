@@ -9,6 +9,9 @@ The main difference with the SinglePaged theme is
 - based on latest version of Skeleton.js framework (sass version)
 - now uses sass for css stylesheets
 - added EU cookie notice support (no guarantees though this solution is fully legally compliant!)
+- added embedded RSS feed support
+- added embedded twitter widget support with custom styling (customize-twitter.js)
+- added 404 page
 
 Think of it as a tree of SinglePaged-type sites. This makes it more suitable for a product website,
 with a different SinglePaged-type page for each product.  Each such page can then set a group parameter, 
