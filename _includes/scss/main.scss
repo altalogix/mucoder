@@ -285,6 +285,10 @@ nav ul li:hover, nav ul li.active {
   padding: 0 9%;
 }
 
+.u-align-left {
+  padding: 0 5%;
+}
+
 .u-indent-below-li {
   padding: 0 20%;
 }
@@ -414,38 +418,6 @@ nav ul li:hover, nav ul li.active {
 	*/
 }
 
-
-/* ---- twitter embedded timelines ---- */
-
-.tweet {
-  font: normal 12px/18px Helvetica, Arial, sans-serif;
-  font-size: 20px;
-}
-
-a.twitter-timeline {
-  /* Buttonish */
-  display: inline-block;
-  padding: 6px 12px 6px 30px;
-  margin: 10px 0;
-  border: #ccc solid 1px;
-  border-radius: 3px;
-  background: #f8f8f8 url(//platform.twitter.com/images/bird.png) 8px 8px no-repeat;
- 
-  /* Text */
-  font: normal 12px/18px Helvetica, Arial, sans-serif;
-  color: #333;
-  white-space: nowrap;
-}
- 
-a.twitter-timeline:hover,
-a.twitter-timeline:focus {
-  background-color: #dedede;
-}
-  
-a.twitter-timeline:focus {
-  outline: none;
-  border-color: #0089cb;
-}
 
 /* ---- small device adaptations ---- */
 
