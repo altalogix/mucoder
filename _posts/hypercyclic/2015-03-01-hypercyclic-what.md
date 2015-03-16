@@ -4,6 +4,7 @@ bg: grey
 color: black
 date: 2015-03-06 09:00:02
 group: hypercyclic
+permalink: /
 ---
 ## what is hypercyclic?
 

@@ -4,6 +4,7 @@ bg: contactgreen
 color: white
 date: 2015-03-06 09:00:05
 group: home
+permalink: /
 ---
 
 ## contact

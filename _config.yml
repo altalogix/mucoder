@@ -7,7 +7,7 @@ safe: false
 
 ### site serving configuration ###
 exclude: [.gitignore]
-permalink: / ## disables post output
+permalink: /blog/:year/:month/:day/:title.html
 timezone: null
 lsi: false
 markdown: kramdown

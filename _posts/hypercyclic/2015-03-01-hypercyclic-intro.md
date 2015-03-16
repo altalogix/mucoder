@@ -7,6 +7,8 @@ group: hypercyclic
 pageTitle:       "mucoder hypercyclic"
 pageKeywords:    "mucoder vst au hypercyclic midi mangling step sequencer plugin instrument lfo"
 pageDescription: "lfo-driven, midi-mangling arpeggiator step sequencer"
+permalink: /
+pageCanonical: /en/hypercyclic
 ---
 
 ## hypercyclic v1.5.544

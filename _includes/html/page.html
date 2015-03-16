@@ -2,6 +2,7 @@
 {% assign pageKeywords = {{site.keywords}} %}
 {% assign pageTitle = {{site.title}} %}
 {% assign pageDescription = {{site.description}} %}
+{% assign pageCanonical = {{site.canonical}} %}
 {% assign disableCookies = "false" %}
 {% for node in site.posts reversed %}
 	{% if node.group == include.group %}
@@ -13,6 +14,9 @@
 	  {% endif %}
 	  {% if node.pageDescription %}
 		 {% assign pageDescription = {{node.pageDescription}} %}
+	  {% endif %}
+	  {% if node.pageCanonical %}
+		 {% assign pageCanonical = {{node.pageCanonical}} %}
 	  {% endif %}
 	  {% if node.disableCookies %}
 		 {% assign disableCookies = {{node.disableCookies}} %}
@@ -32,7 +36,7 @@
   <link rel="stylesheet" href="/css/combo.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="canonical" href="/en/tonespace" />
+  {% if pageCanonical %} <link rel="canonical" href="{{ pageCanonical }}" /> {% endif %}
   {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
   {% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
 </head>
