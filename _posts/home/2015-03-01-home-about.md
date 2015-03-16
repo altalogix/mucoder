@@ -24,6 +24,6 @@ permalink: /
 
 - not really audio-related, but [Tagwolf Email Filing Assistant](http://www.tagwolf.com) is major project I've been working on lately (now you know why tonespace updates take so long ;-).
 - it applies smart classification algorithms to incoming email that can predict where your email should be filed - a big time saver for professionals that file their email to folders in Microsoft Outlook
-- [![tagwolf](http://www.tagwolf.com/en/mastertemplate/images/twlogo120x40.png)](http://www.tagwolf.com) - check it out [here](http://www.tagwolf.com) 
+- [![tagwolf](/img/twlogo120x40.png)](http://www.tagwolf.com) - check it out [here](http://www.tagwolf.com) 
 
 
