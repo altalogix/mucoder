@@ -5,7 +5,7 @@ color: black
 date: 2015-03-06 09:00:01
 group: tonespace
 pageTitle:       "mucoder tonespace"
-pageKeywords:    "mucoder vst au tonespace chord scale key midi plugin instrument"
+pageKeywords:    "mucoder vst au tonespace chord chorder scale key midi plugin instrument"
 pageDescription: "chord generator and visualizer"
 permalink: /
 pageCanonical: /en/tonespace
