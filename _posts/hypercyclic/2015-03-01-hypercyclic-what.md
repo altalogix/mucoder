@@ -29,7 +29,7 @@ permalink: /
 ## it's free
 
 - hypercyclic is free (as in beer)
-- if you like it, and want to help, share it with your friends
+- if you like it, and want to help, **share** it with your friends, and **[rate it](http://www.kvraudio.com/product/hypercyclic-by-mucoder/reviews)** at KVRAudio
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=lolivers" async="async"></script>
 <div class="u-indent-below-li" style="padding-bottom:2rem" >
