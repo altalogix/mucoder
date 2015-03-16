@@ -33,28 +33,17 @@
   <meta name="description" content="{{ pageDescription }}">
   <meta name="robots" content="noodp,noydir" />
   <title>{{ pageTitle }}</title>
-  <link rel="stylesheet" href="/css/combo.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/combo.css" type='text/css'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway:400,300,700' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type='text/css'>
   {% if pageCanonical %} <link rel="canonical" href="{{ pageCanonical }}" /> {% endif %}
   {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
   {% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  {% if disableCookies == "false" %}
+    {% include html/analyticshead.html %}
+  {% endif %}    
 </head>
 <body>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/cookiechoices.min.js"></script>
-<script src="/js/site.min.js"></script>
-<script src="/js/customize-twitter-1.1.min.js"></script>
-{% if disableCookies == "false" %}
-<script>
-  document.addEventListener('DOMContentLoaded', function(event) {
-    cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
-  });
-</script>
- {% include html/analytics.html %}
-{% endif %}  
-
   <div id="main">
 
     <nav><ul>
@@ -110,6 +99,29 @@
       </div>
     </div>
   </div>
-  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/js/cookiechoices.min.js"></script>
+  <script src="/js/site.min.js"></script>
+  {% if include.customize_twitter == "true" %}
+    <script src="/js/customize-twitter-1.1.min.js"></script>  
+    <script>
+    $().ready(function () {
+	    var options = { 
+		    "url": "/css/customize_twitter.css"
+	    };
+	    CustomizeTwitterWidget(options);
+      });
+    </script>
+  {% endif %}  
+  {% if disableCookies == "false" %}
+    {% include html/analyticsfoot.html %}
+  {% endif %}    
+  {% if disableCookies == "false" %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+        cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
+      });
+    </script>
+  {% endif %}  
 </body>
 </html>

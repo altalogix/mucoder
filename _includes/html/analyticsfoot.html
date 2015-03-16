@@ -1,0 +1,14 @@
+{% if site.google_analytics_key %}
+
+<script>
+
+  $(document).ready(function (){
+  $('.track-click').click(function(sender) {
+     var url = $(this).attr('href');
+     ga('send', 'pageview', url);
+	});
+  });
+
+</script>
+
+{% endif %}
