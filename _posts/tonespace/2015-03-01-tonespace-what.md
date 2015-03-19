@@ -12,7 +12,7 @@ permalink: /
 - displays chords and scales on a grid, making it easy to understand their structure
 - displays chords on a piano keyboard, making it easy to play them
 - supports 39 chord types, 25 chord voicings/inversions, 21 scales, 18 keys, and 50 different grids
-- accepts MIDI input for triggering or viewing chords
+- accepts easy, single-note MIDI input for triggering or viewing chords
 - can output chords over MIDI to your favorite synth
 - acts either as a VST or Audio Unit plugin for your DAW, or as a standalone application
 
