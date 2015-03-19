@@ -19,8 +19,8 @@ title:       "mucoder audio tools &amp; plugins"
 keywords:    "mucoder vst au tonespace hypercyclic plugin"
 description: "mucoder audio tools &amp; plugins"
 source_link: "https://github.com/altalogix/mucoder/tree/gh-pages"
-favicon:     "img/favicon.ico"
-touch_icon:  "img/mucodericon128.png"
+favicon:     "/img/favicon.ico"
+touch_icon:  "/img/mucodericon128.png"
 google_analytics_key: UA-17988967-1
 
 
