@@ -23,8 +23,7 @@ pageCanonical: /en/hypercyclic
 
 ##### now with 64-bit support
 
-{: .center }
-<div>
+<div class="center">
 <p></p>
 <p><a class="large-button button-primary" href="#download">download</a></p>
 </div>

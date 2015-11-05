@@ -25,8 +25,7 @@ pageCanonical: /en/tonespace
 
 ##### now with 64-bit support
 
-{: .center }
-<div>
+<div class="center">
 <p></p>
 <p><a class="large-button button-primary u-fixed-width-20" href="#download">download</a></p>
 <p><a class="large-button u-fixed-width-20" href="#demo">watch demo</a></p>
