@@ -43,6 +43,14 @@ hr {
   border-color: $border_color;
 }
 
+table {
+  margin-left:5rem;
+}
+
+code {
+  margin-left:5rem;
+}
+
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* ---- left align bulleted lists ---- */
@@ -104,6 +112,7 @@ li {
   padding: 0 5%;
 }
 .container ol, .container ul { padding: 0 8%; }
+
 
 {% comment %}
 .container p:first-of-type {

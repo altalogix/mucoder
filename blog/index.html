@@ -1,18 +1,4 @@
 ---
-layout: compress
+#layout: compress
 ---
-<html>
-<body>
-
-<h2>Test Blog Index</h2>
-<ul>
-{% for node in site.posts reversed %}
-  {% if node.url != "/" %}
-     <li><a href="{{ node.url }}">{{node.title}}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-(layout under construction...)
-</body>
-</html>
+{% include html/blogindex.html group="blog" %} 

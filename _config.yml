@@ -10,9 +10,11 @@ exclude: [.gitignore]
 permalink: /blog/:year/:month/:day/:title.html
 timezone: null
 lsi: false
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 highlighter: pygments
-
+#markdown: kramdown
 
 ### content configuration ###
 title:       "mucoder audio tools &amp; plugins"

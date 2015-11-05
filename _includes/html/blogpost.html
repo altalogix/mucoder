@@ -1,0 +1,150 @@
+{% capture cache %}
+{% assign pageKeywords = {{site.keywords}} %}
+{% assign pageTitle = {{site.title}} %}
+{% assign pageDescription = {{site.description}} %}
+{% assign pageCanonical = {{site.canonical}} %}
+{% assign disableCookies = "false" %}
+
+{% if include.page.pageKeywords %}
+ {% assign pageKeywords = {{include.page.pageKeywords}} %}
+{% endif %}
+{% if include.page.pageTitle %}
+ {% assign pageTitle = {{include.page.pageTitle}} %}
+{% endif %}
+{% if include.page.pageDescription %}
+ {% assign pageDescription = {{include.page.pageDescription}} %}
+{% endif %}
+{% if include.page.pageCanonical %}
+ {% assign pageCanonical = {{include.page.pageCanonical}} %}
+{% endif %}
+{% if include.page.disableCookies %}
+ {% assign disableCookies = {{include.page.disableCookies}} %}
+{% endif %}
+ 
+{% endcapture %}{% assign cache = nil %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="{{ pageKeywords }}">
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="robots" content="noodp,noydir" />
+  <title>{{ pageTitle }}</title>
+  <link rel="stylesheet" href="/css/combo.css" type='text/css'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway:400,300,700' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type='text/css'>
+  <link rel="stylesheet" href="/css/swipebox.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/pygments.css">  
+  {% if pageCanonical %} <link rel="canonical" href="{{ pageCanonical }}" /> {% endif %}
+  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
+  {% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  {% if disableCookies == "false" %}
+    {% include html/analyticshead.html %}
+  {% endif %}    
+</head>
+<body>
+
+
+  <div id="main">
+
+
+    <nav><ul>
+		<li ><a class="p-home-intro" href="/">home</a></li>	 
+		<li ><a class="p-home-intro" href="/blog">blog</a></li>	 
+		<li ><a class="p-home-intro" href="/#tonespace">freeware</a></li>	 
+		<li ><a class="p-home-intro" href="/#contact">contact</a></li>	 
+		<li ><a class="p-home-intro" href="/#about">about</a></li>	 
+    </ul></nav>
+
+    {% for node in site.posts reversed %}
+
+  	  {% assign renderPost = true %}
+	  
+      {%if node.type == 'blogpost' and node.date != include.page.date %}	  
+  	     {% assign renderPost = false %}	  
+	  {% endif %}
+      {%if node.type == 'blogpost' and node.title != include.page.title %}	  
+  	     {% assign renderPost = false %}	  
+	  {% endif %}
+ 	  {%if node.group != include.page.group %}
+  	     {% assign renderPost = false %}	  
+	  {% endif %}
+	  
+ 	  {%if renderPost %}	  
+         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+          <div id="{{id}}" class="section-no-icon p-{{id}}">
+          <div class="container {{ node.style }}">
+          {%if node.type == 'blogpost' %}	  
+            <h2>{{node.title}}</h2>
+		    <h6>{{ node.date | date: '%B %d, %Y' }} &nbsp;-&nbsp; {{node.author}}</h6>
+ 	      {% endif %}
+            {{ node.content }} 
+          </div>
+        </div>
+ 	   {% endif %}
+    {% endfor %}
+
+    {% for node in site.posts reversed %}
+
+  	  {% assign renderPost = false %}
+	  
+      {%if node.type == 'blogpost' and node.date != include.page.date %}	  
+  	     {% assign renderPost = true %}	  
+	  {% endif %}
+      {%if node.type == 'blogpost' and node.title != include.page.title %}	  
+  	     {% assign renderPost = true %}	  
+	  {% endif %}
+ 	  {%if node.group != include.page.group %}
+  	     {% assign renderPost = false %}	  
+	  {% endif %}
+	  
+ 	  {%if renderPost %}	  
+         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+          <div id="{{id}}" class="section-no-icon p-{{id}}">
+          <div class="container {{ node.style }}">
+            <h5><a href="{{ node.url }}">{{node.title}}</a></h5>
+			<h6>{{ node.date | date: '%B %d, %Y' }} &nbsp;-&nbsp; {{node.author}}</h6>
+          </div>
+        </div>
+ 	   {% endif %}
+    {% endfor %}
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        {% capture foottext %} {% include md/footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
+      </div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/js/cookiechoices.min.js"></script>
+  <script src="/js/site.min.js"></script>
+  <script src="/js/jquery.swipebox.min.js"></script>  
+    {% if include.customize_twitter == "true" %}
+    <script src="/js/customize-twitter-1.1.min.js"></script>  
+    <script>
+    $().ready(function () {
+	    var options = { 
+		    "url": "/css/customize_twitter.css"
+	    };
+	    CustomizeTwitterWidget(options);
+      });
+    </script>
+  {% endif %}  
+  {% if disableCookies == "false" %}
+    {% include html/analyticsfoot.html %}
+  {% endif %}    
+  {% if disableCookies == "false" %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+        cookieChoices.showCookieConsentDialog("This site uses cookies to give you a better experience", "I'm fine with this", "view privacy policy", "/en/legal/privacypolicy");
+      });
+    </script>
+  {% endif %}  
+  <script type="text/javascript">
+    (function($) { 
+	    $( '.swipebox' ).swipebox(); })(jQuery);
+  </script>
+</body>
+</html>
