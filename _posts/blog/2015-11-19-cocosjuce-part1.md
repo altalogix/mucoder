@@ -149,5 +149,13 @@ Android/libs/armeabi-v7a/libjuce_jni.so
 Android/libs/x86/libjuce_jni.so 
 ```
 
-
 Rename all of these to *libCocosJuceSharedLib.so*
+
+## Wrapping up
+
+
+By the time we've reached this point, all the native C/C++ library work is behind us.
+
+In [Part 2](/blog/2015/11/19/cocosjuce-part2.html) of this series we'll examine how to set up the Xamarin/C# side of things.
+
+
