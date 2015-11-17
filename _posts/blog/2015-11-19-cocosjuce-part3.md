@@ -99,7 +99,7 @@ As a result the resulting UI now has a native look & feel:
 ##### iOS
 
 <a href="/img/2015-11-19-cocosjuce/xamformsaniios.gif" class="swipebox" title="cocosjuce Xamarin.Forms iOS">
-<img src="/img/2015-11-19-cocosjuce/xamformsaniiOS.gif" alt="xamforms ios" ></a>
+<img src="/img/2015-11-19-cocosjuce/xamformsaniios.gif" alt="xamforms ios" ></a>
 
 ## Wrapping up
 
