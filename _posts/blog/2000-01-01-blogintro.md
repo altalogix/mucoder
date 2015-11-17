@@ -9,4 +9,4 @@ type: blogindex
 ---
 ![logo](/img/mucoderlogo200.png)
 
-## Dev Notes
+## developer notes
