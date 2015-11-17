@@ -262,6 +262,6 @@ file for the shared libraries, which produces a suitable Win32 dll.
 Similarly there is another project, named `CocosJuceTestClientCSharp`, which demonstrates how to consume the win32 dll version of our audio lib
 from a basic good old .NET WinForms application, removing any dependency on CocosSharp.
 
-In [Part 3](/blog/2015/11/19/cocosjuce-part4.html) of this series we'll talk about a few additional approaches, such as how to consume our Juce audio lib from a non-game UI in Xamarin.
+In [Part 3](/blog/2015/11/19/cocosjuce-part3.html) of this series we'll talk about a few additional approaches, such as how to consume our Juce audio lib from a non-game UI in Xamarin.
 
  
