@@ -247,6 +247,21 @@ You can now compile and deploy the app as you would any Xamarin app.  The binary
 
 By now we have seen the whole process of integrating a Juce C++ audio library in a Xamarin CocosSharp app.
 
+
+##### Note to Windows developers: 
+
+if you examine the sample code project repository (link at top of this article) then, as a bonus, you'll find also a Windows version of the CocosSharp UI
+in the form of the project `CocosJuceApp.WinDX`.  This is not a mobile app, but a classic .NET Win32 application, with a dependency on DirectX instead of OpenGL.
+This project illustrates how the same CocosSharp code can also be used outside of Xamarin-based solutions.
+If you are a Windows developer this offers a very quick way to develop or prototype CocosSharp UIs, since the code/build/debug cycle roundtrips are much faster when coding for Windows only.
+Once done you can use that same CocosSharp code again in your mobile projects and you should be good to go.
+
+This project demonstrates as well how to consume our Juce audio library from Win32 .NET code.  More specifically a Windows build configuration is included in the Introjucer 
+file for the shared libraries, which produces a suitable Win32 dll.
+
+Similarly there is another project, named `CocosJuceTestClientCSharp`, which demonstrates how to consume the win32 dll version of our audio lib
+from a basic good old .NET WinForms application, removing any dependency on CocosSharp.
+
 In [Part 3](/blog/2015/11/19/cocosjuce-part4.html) of this series we'll talk about a few additional approaches, such as how to consume our Juce audio lib from a non-game UI in Xamarin.
 
  
