@@ -5,7 +5,7 @@ color: black
 date: 2015-03-06 09:00:00
 group: privacypolicy
 disableCookies: "true"
-permalink: /
+#permalink: /
 ---
 
 #### Privacy policy for www.mucoder.net

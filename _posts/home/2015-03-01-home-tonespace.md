@@ -5,7 +5,7 @@ color: black
 date: 2015-03-06 09:00:01
 group: home
 #fa-icon: info
-permalink: /
+#permalink: /
 ---
 
 

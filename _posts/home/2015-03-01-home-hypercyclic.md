@@ -5,7 +5,7 @@ color: white
 date: 2015-03-06 09:00:02
 group: home
 #fa-icon: plug
-permalink: /
+#permalink: /
 ---
 
 <div class="u-full-width">

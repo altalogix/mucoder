@@ -7,7 +7,7 @@ group: tonespace
 pageTitle:       "mucoder tonespace"
 pageKeywords:    "mucoder vst au tonespace chord chorder scale key midi plugin instrument"
 pageDescription: "Tonespace is a chord generator and visualizer. It displays chords and scales on a grid, making it easy to understand their structure. It displays chords on a piano keyboard, making it easy to play them. Tonespace supports 39 chord types, 25 chord voicings/inversions, 21 scales, 18 keys, and 50 different grids. It accepts easy, single-note MIDI input for triggering or viewing chords, and it can output chords over MIDI to your favorite synth. Tonespace acts either as a VST or Audio Unit plugin for your DAW, or as a standalone application."
-permalink: /
+#permalink: /
 pageCanonical: /en/tonespace
 ---
 
