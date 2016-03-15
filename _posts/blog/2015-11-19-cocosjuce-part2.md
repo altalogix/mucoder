@@ -14,6 +14,8 @@ author: Leo Olivers
 In the [previous](/blog/2015/11/19/cocosjuce-part1.html) post of this series we showed how to build a headless Juce audio library in C++. 
 In this post we'll take that library and consume it from a mobile C# UI, using Xamarin and the CocosSharp game framework.
 
+**[Update: The Android-related techniques in this article series work fine with Juce 3.3.  However, Juce 4.x introduced a new Android startup activity which does not play well with a headless audio library.  So far no workaround is known yet, but I'll update these articles as soon as there is one.]**
+
 ## Xamarin solution structure
 
 When you download the sample code (link above) you'll find the Xamarin solution `CocosJuceApp.sln` in the `CocosJuce/CocosJuceApp` folder.
@@ -60,7 +62,7 @@ After choosing your start-up project and target device you should be able to com
 of the iOS version of the app running in the simulator:
 
 <a href="/img/2015-11-19-cocosjuce/cocosjuceappiosani.gif" class="swipebox" title="cocossharp iOS app screenshot">
-<img src="/img/2015-11-19-cocosjuce/cocosjuceappiosani.gif" alt="cocosjuceappiosani" width=300 ></a>
+<img src="/img/2015-11-19-cocosjuce/cocosjuceappiosani.gif" alt="cocosjuceappiosani" width="300" ></a>
 
 As you can see a it's a very basic UI. And while it technically uses a gaming UI API, it does not have to act like a game - we can do whatever we like, 
 from a full fledged game to a 'traditional' skeuomorphic hardware emulation that is so common in the audio world - perhaps with some tasteful control animation sprinkled on top.
@@ -75,7 +77,7 @@ visit the  [CocosSharp Wiki](https://github.com/mono/CocosSharp/wiki).
 As said the beef of this post is about interop between Juce and Xamarin. The design of this interop is relatively straightforward:
 
 <a href="/img/2015-11-19-cocosjuce/clientdesign.png" class="swipebox" title="cocossharp client design">
-<img src="/img/2015-11-19-cocosjuce/clientdesign.png" alt="clientdesign" width=400 ></a>
+<img src="/img/2015-11-19-cocosjuce/clientdesign.png" alt="clientdesign" width="400" ></a>
 
 The central part in this design is a C# class called `CocosJuce.Api`.  This class defines the mapping between
 a set of static C# methods and their native counterparts, exported by our Juce C++ library (see part 1).
@@ -208,7 +210,7 @@ find these libs and which additional libs or frameworks they depend on.  This ca
 be specified in the iOS project properties dialog, in a field called `Additional mtouch arguments`:
 
 <a href="/img/2015-11-19-cocosjuce/iosmtouchsettings.png" class="swipebox" title="iOS mtouch arguments">
-<img src="/img/2015-11-19-cocosjuce/iosmtouchsettings.png" alt="iosmtouchsettings" width=700></a>
+<img src="/img/2015-11-19-cocosjuce/iosmtouchsettings.png" alt="iosmtouchsettings" width="700"></a>
 
 Please note that these arguments will be different for iPhone and IphoneSimulator builds;
 

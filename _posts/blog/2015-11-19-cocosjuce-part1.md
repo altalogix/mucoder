@@ -13,6 +13,8 @@ author: Leo Olivers
 
 *A summary of this article series is available as [slides](/doc/2015-11-19-cocosjuce/jucesummit-cocosjuce.pdf), presented at the [Juce Summit 2015](http://www.juce.com/summit).*
 
+**[Update: The Android-related techniques in this article series work fine with Juce 3.3.  However, Juce 4.x introduced a new java startup activity which does not play well with a headless audio library.  So far no workaround is known yet, but I'll update these articles as soon as there is one.]**
+
 I have been a longtime enthusiastic user of the [Juce](http://www.juce.com) C++ framework, with several audio [plugins](/#tonespace) based on it.
 At the same time I have been venturing into some mobile projects lately, mostly using [Xamarin](http://www.xamarin.com). 
 Which is a great toolset as well, allowing me to write cross-platform mobile apps in C# and leveraging experience I built over the years while doing enterprise .NET projects. 
@@ -59,7 +61,7 @@ One thing you need to know is that Android and iOS differ in how they support li
 
 ##### IntroJucer settings
 
-I will not explain here all the intricacies of how to use the IntroJucer here. It's not hard though and a tutorial can be found [here](http://learn.juce.com/doc/tutorial_new_introjucer_project.php). Instead I will provide those IntroJucer settings that differ from the default ones:
+I will not explain all the intricacies of how to use the IntroJucer here. It's not hard though and a tutorial can be found [here](http://learn.juce.com/doc/tutorial_new_introjucer_project.php). Instead I will provide those IntroJucer settings that differ from the default ones:
 
 | Introjucer iOS build setting  | Value             |
 | ------------------------- | --------------------- |

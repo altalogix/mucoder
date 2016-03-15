@@ -9,6 +9,7 @@ layout: blogpost
 author: Leo Olivers
 ---
 
+**[Update: The Android-related techniques in this article series work fine with Juce 3.3.  However, Juce 4.x introduced a new Android startup activity which does not play well with a headless audio library.  So far no workaround is known yet, but I'll update these articles as soon as there is one.]**
 
 (Sample code for this article is available at [github.com/altalogix/CocosJuce](http://github.com/altalogix/CocosJuce))
 
