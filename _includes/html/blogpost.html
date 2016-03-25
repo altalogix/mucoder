@@ -57,13 +57,16 @@
 		<li ><a class="p-home-intro" href="/#about">about</a></li>	 
     </ul></nav>
 
-    {% for node in site.posts reversed %}
+    {% for node in site.posts %}
 
-  	  {% assign renderPost = true %}
-	  
-      {%if node.type == 'blogpost' and node.date != include.page.date %}	  
-  	     {% assign renderPost = false %}	  
-	  {% endif %}
+ 	  {% assign renderPost = false %}
+
+ 	  {%if node.type == 'blogpost' %}
+  	     {% assign renderPost = true %}	  
+	  {% endif %}	  
+ 	  {%if node.type == 'blogheader' %}
+  	     {% assign renderPost = true %}	  
+	  {% endif %}	  
       {%if node.type == 'blogpost' and node.title != include.page.title %}	  
   	     {% assign renderPost = false %}	  
 	  {% endif %}
@@ -79,19 +82,16 @@
             <h2>{{node.title}}</h2>
 		    <h6>{{ node.date | date: '%B %d, %Y' }} &nbsp;-&nbsp; {{node.author}}</h6>
  	      {% endif %}
-            {{ node.content }} 
+          {{ node.content | markdownify }}           
+		  </div>
           </div>
-        </div>
  	   {% endif %}
     {% endfor %}
 
-    {% for node in site.posts reversed %}
+    {% for node in site.posts %}
 
   	  {% assign renderPost = false %}
 	  
-      {%if node.type == 'blogpost' and node.date != include.page.date %}	  
-  	     {% assign renderPost = true %}	  
-	  {% endif %}
       {%if node.type == 'blogpost' and node.title != include.page.title %}	  
   	     {% assign renderPost = true %}	  
 	  {% endif %}
@@ -106,7 +106,7 @@
             <h5><a href="{{ node.url }}">{{node.title}}</a></h5>
 			<h6>{{ node.date | date: '%B %d, %Y' }} &nbsp;-&nbsp; {{node.author}}</h6>
           </div>
-        </div>
+          </div>
  	   {% endif %}
     {% endfor %}
 

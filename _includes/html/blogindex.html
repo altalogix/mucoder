@@ -54,7 +54,7 @@
 		<li ><a class="p-home-intro" href="/#about">about</a></li>	 
     </ul></nav>
 
-    {% for node in site.posts reversed %}
+    {% for node in site.posts %}
  	  {%if node.group == include.group %}
        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <div id="{{id}}" class="section-no-icon p-{{id}}">
@@ -62,9 +62,10 @@
           {%if node.type == 'blogpost'%}
             <h5><a href="{{ node.url }}">{{node.title}}</a></h5>
 			<h6>{{ node.date | date: '%B %d, %Y' }} &nbsp;-&nbsp; {{node.author}}</h6>
- 		{% else %}
-            {{ node.content }} 
-        {% endif %}
+          {% endif %}
+          {%if node.type == 'blogheader'%}
+             {{ node.content }} 
+          {% endif %}
         </div>
       </div>
  	 {% endif %}
