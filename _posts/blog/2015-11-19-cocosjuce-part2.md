@@ -1,7 +1,7 @@
 ---
 title: "Consuming a headless Juce C++ audio library from a Xamarin CocosSharp game UI - Part 2"
 bg: white
-color: black
+color: darkgrey
 date: 2015-11-19 08:00:02
 group: blog
 type: blogpost

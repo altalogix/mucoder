@@ -1,7 +1,7 @@
 ---
 title: "what"
 bg: grey
-color: black
+color: darkgrey
 date: 2015-03-06 09:00:02
 group: hypercyclic
 #permalink: /

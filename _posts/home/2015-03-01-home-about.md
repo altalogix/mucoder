@@ -1,7 +1,7 @@
 ---
 title: "about"
 bg: grey
-color: black
+color: darkgrey
 date: 2015-03-06 09:00:07
 group: home
 #permalink: /

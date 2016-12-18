@@ -1,7 +1,7 @@
 ---
 title: "support"
 bg: grey
-color: black
+color: darkgrey
 date: 2015-03-06 09:00:04
 group: tonespace
 #permalink: /
