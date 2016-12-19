@@ -14,13 +14,13 @@ group: beatdiscovery
 
 - by **Ruckazoid & Teeko**. Finding 15 brand new beats in 20 minutes. This is the resulting mix tape.
 			
-<iframe class="align-left-with-li" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296579219&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700"></iframe>
+<div class="icontain"><iframe class="align-left-with-li" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296579219&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700"></iframe></div>
 
 <br/>
 
 - Watch how they did it:  
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeatdiscovery%2Fvideos%2F1938039183090480%2F&show_text=1&width=560" width="560" height="464" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<div class="icontain"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeatdiscovery%2Fvideos%2F1938039183090480%2F&show_text=1&width=560" width="560" height="464" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
 
 ---
   
@@ -28,7 +28,7 @@ group: beatdiscovery
 
 - by **Ruckazoid & Teeko**. Finding more beats in record time.
   
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeatdiscovery%2Fvideos%2F1942693382625060%2F&show_text=1&width=560" width="560" height="451" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<div class="icontain"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeatdiscovery%2Fvideos%2F1942693382625060%2F&show_text=1&width=560" width="560" height="451" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
   
 ---
 
