@@ -12,7 +12,7 @@ group: home
   
 <div class="u-full-width">
 		<div  class="u-icon-label">
-			 <h2>BeatDiscovery</h2>
+			 <h2><span style="display:inline-block">Beat</span><span style="display:inline-block">Discovery</span></h2>
 			 <h4><a href="/en/beatdiscovery">learn more</a></h4>
 		</div>
 		<div class="u-icon-right">
