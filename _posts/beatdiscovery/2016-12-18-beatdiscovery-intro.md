@@ -31,4 +31,4 @@ pageCanonical: /en/beatdiscovery
 <p><a class="large-button u-fixed-width-20" href="#demo">watch demo</a></p>
 </div>
 	
-If you make beats, then you’ve probably sifted through hundreds of sounds, loading them individually, only to program the same pattern you’ve made a thousand times.  It’s extremely tedious, and can take the fun out of making a beat.  Beat Discovery is the first drum sequencer of it’s kind, and was designed to solve this problem. It makes programming sounds fun, creative, and super easy. It’s easy for beginners & made for and by professionals.
+If you make beats, then you’ve probably sifted through hundreds of sounds, loading them individually, only to program the same pattern you’ve made a thousand times.  It’s extremely tedious, and can take the fun out of making a beat. Beat Discovery is the first drum sequencer of its kind, and was designed to solve this problem. It makes programming sounds fun, creative, and super easy. It’s easy for beginners & made for and by professionals.
