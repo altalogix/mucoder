@@ -5,6 +5,7 @@
   $(document).ready(function (){
   $('.track-click').click(function(sender) {
      var url = $(this).attr('href');
+     ga('set', 'anonymizeIp', true);
      ga('send', 'pageview', url);
 	});
   });
