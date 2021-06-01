@@ -24,7 +24,7 @@ source_link: "https://github.com/altalogix/mucoder/tree/gh-pages"
 favicon:     /img/favicon.ico
 touch_icon:  /img/mucodericon128.png
 google_analytics_key: UA-17988967-1
-
+disable_cookies: "true"
 
 ### template colors, used site-wide via css ###
 colors:

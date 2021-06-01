@@ -3,7 +3,7 @@
 {% assign pageTitle = {{site.title}} %}
 {% assign pageDescription = {{site.description}} %}
 {% assign pageCanonical = {{site.canonical}} %}
-{% assign disableCookies = "false" %}
+{% assign disableCookies = {{site.disable_cookies}} %}
 
 {% if include.page.pageKeywords %}
  {% assign pageKeywords = {{include.page.pageKeywords}} %}
